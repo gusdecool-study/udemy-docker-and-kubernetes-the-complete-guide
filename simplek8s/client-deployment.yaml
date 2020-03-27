@@ -13,5 +13,7 @@ spec:
                 component: web
         spec:
           containers:
-            - name: client
-              image: stephengrider/multi-client
+              - name: client
+                image: stephengrider/multi-client
+                ports:
+                  - containerPort: 3000
