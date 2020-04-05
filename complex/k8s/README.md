@@ -22,3 +22,10 @@ kubectl delete -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/ngi
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/provider/cloud-generic.yaml
 kubectl delete -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/provider/cloud-generic.yaml
 ```
+
+# Kubernetes Dashboard
+
+Configuration is at [kubernetes-dashboard.yaml](http://127.0.0.1:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/overview?namespace=default) 
+from https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+
+Open web page http://127.0.0.1:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/overview?namespace=default to view it.
